@@ -28,7 +28,8 @@
                 height: 30px;
             }
             .a {
-                background-color: aquamarine;
+                background-color: #333333;
+                color: #ffe4c4;
                 border: solid black;
                 display: inline;
                 border-radius: 10px;
@@ -36,19 +37,41 @@
             .b {
                 width: 200px;
                 height: 50px;
-                background-color: aquamarine;
+                background-color: #333333;
+                color: #ffe4c4;
                 float: left;
-                border: solid black 
+                border: solid black; 
+                text-align: center;
+                line-height: 50px;
             }
             .c {
                 width: 200px;
                 height: 50px;
-                background-color: aquamarine;
+                background-color: #333333;
+                color: #ffe4c4;
                 float: right;
                 border: solid black;
+                text-align: center;
+                line-height: 50px;
             }
             .d {
                 position: relative;
+            }
+            .e {
+                background-color: #333333;
+                color: #ffe4c4;
+                width: 300px;
+                height: 100px;
+                border: solid black;
+                text-align: center;
+                border-radius: 10px;
+                line-height: 100px;
+                margin: auto;
+            }
+            .e:hover{
+                background-color: #ffe4c4;
+                color: #333333;
+                z-index: 2;
             }
         </style>
     </head>
@@ -94,6 +117,13 @@
                 Зимы блистательным ковром.<br>
                 Все ярко, все бело кругом.
             </div>
+
+            <h1>Ledder</h1>
+            <div class="e" style="position: relative;">Блок А</div>
+            <div class="e" style="position: relative; top: -40px; left: 20px;">Блок Б</div>
+            <div class="e" style="position: relative; top: -80px; left: 40px;">Блок В</div>
+            <div class="e" style="position: relative; top: -120px; left: 60px;">Блок Г</div>
+            <div class="e" style="position: relative; top: -160px; left: 80px;">Блок Д</div>
         </div>
         <div class="footer">
             Факультет бизнеса, ФБИ-03, 3 курс, 2022
