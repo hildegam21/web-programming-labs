@@ -1,4 +1,4 @@
-function setRussia() {
+function setRussian() {
     let name = document.getElementById('student');
     name.innerHTML = 'Жазгул Абдыкаарова. Юлия Королева';
 
@@ -19,7 +19,7 @@ function setRussia() {
     document.getElementById('reset-button').value = 'Сброс';
 }
 
-function setenghlish() {
+function setEnglish() {
     let name = document.getElementById('student');
     name.innerHTML = 'Zhazgul Abdykaarova. Julia Koroleva';
 
