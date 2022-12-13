@@ -1,0 +1,11 @@
+.step {
+    width: 200px;
+    height: 100px;
+    border: 1px solid;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 100px;
+}
