@@ -18,7 +18,7 @@ function showDaysCount(params){
 function showTime() {
     let outTime = document.getElementById ('time');
     let currentTime = new Date ();
-    outTime.innerHTML = currentTime.toLocaleTimeString('ru');
+    outTime.innerHTML = showNewTime(currentTime);
 }
 
 function showNumber(params){
@@ -46,10 +46,14 @@ function showNewDate(params){
     resultNumber.innerHTML = 'Дата обновленная: ' + prettyDate(birthday);
 }
 
-function showNewTime(params){
-    let 
+function showNewTime(d){
+    let hour = d.getHours();
+    let minut = d.getMinutes();
+    let second = d.getSeconds();
+    let ms = d.getMilliseconds();
+    return hour + ' ' + 'ч' + ' '+ minut + ' ' + 'м' + ' ' + Math.floor(second * 10 + ms/100)/10 + ' ' + 'c';
 }
 
 window.addEventListener('load', showDate);
 window.addEventListener('load', showTime);
-setInterval(showTime, 1000);
+setInterval(showTime, 100);
