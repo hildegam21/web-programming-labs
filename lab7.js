@@ -35,7 +35,7 @@ function makeStairs() {
     let stairs = document.querySelector('#stairs');
     let stepCount = 20;
     for (let i = 0; i<stepCount; i++){
-        stairs.innerHTML += '<div class="step"></div>'
+        stairs.innerHTML += '<div class="step"></div>';
     }
 
     let steps = document.querySelectorAll('.step');
@@ -45,3 +45,4 @@ function makeStairs() {
         steps[i].innerHTML = 'Блок номер ' + i;
     }
 }
+ 
