@@ -1,0 +1,32 @@
+.header {
+    background-color: #333333;
+    color: #ffe4c4;
+    font-size: 20px 80px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 30px;
+    line-height: 80px;
+}
+.footer {
+    background-color: #333333;
+    color: #888;
+    font-style: italic;
+    text-align: right;
+    font-size: 14px;
+    padding-right: 20px;
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+    position: fixed; 
+    left: 0; 
+    bottom: 0;
+}
+.content {
+    background-color: #333333;
+    color: #ffe4c4;
+    font-size: 20px 80px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 30px;
+    line-height: 80px;
+}
