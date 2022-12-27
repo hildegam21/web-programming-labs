@@ -45,6 +45,17 @@ function showCoords(event) {
 window.addEventListener('DOMContentLoaded', function() {
     let coords = document.querySelector('#coords')
     coords.addEventListener('mousemove', showCoords);
+    let texts = document.querySelectorAll('input[type="text"]');
+    for (let i = 0; i<texts.length; i++){
+        texts[i].addEventListener("focus", function(event) {
+            event.target.style.color = "red";
+            event.target.style.fontSize = "30px";
+        });
+        texts[i].addEventListener("blur", function(event) {
+            event.target.style.color = "black";
+            event.target.style.fontSize = "13px";
+        });
+    }
 });
 
 document.addEventListener("keydown", function (event) {
@@ -61,3 +72,5 @@ document.addEventListener("keydown", function (event) {
     if (event.altKey) 
         alert("Был нажат ALT")
 });
+
+
