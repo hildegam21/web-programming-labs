@@ -18,3 +18,23 @@ function clickMe2(button) {
     else 
         button.innerHTML = 'Юлия';
 }
+
+function clickMe3(button) {
+    if(button.innerHTML == 'Нажми меня') {
+        button.innerHTML = 'Еще раз нажми';
+        button.style.background = "green";
+    }
+    else if(button.innerHTML == 'Еще раз нажми') {
+        button.innerHTML = 'Еще';
+        button.style.background = "red";
+    }
+    else if(button.innerHTML == 'Еще'){
+        button.innerHTML = 'Начать сначала';
+        button.style.background = "yellow";   
+    } 
+    else {
+        button.innerHTML = 'Нажми меня';
+        button.style.background = "blue";
+    }
+}
+
