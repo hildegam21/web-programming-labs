@@ -16,10 +16,7 @@
     padding-right: 20px;
     line-height: 30px;
     height: 30px;
-    width: 100%;
-    position: fixed; 
-    left: 0; 
-    bottom: 0;
+    width: 99%;
 }
 .content {
     background-color: #333333;
