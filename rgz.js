@@ -1,7 +1,11 @@
 let slideIndex = 0;
+let playing = true;
+let playButton = document.getElementById('play');
+
 showSlides();
-                    
+
 function showSlides() {
+  if(playing) { 
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
@@ -15,5 +19,18 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000);
+    timer = setTimeout(showSlides, 2000);
+  }
 }
+
+function clickMe(button) {
+    if(button.innerHTML == 'Пауза') {
+        button.innerHTML = 'Пуск';
+        clearInterval(timer);
+    }
+    else {
+        button.innerHTML = 'Пауза';
+        showSlides();
+    }
+}
+
